@@ -1,0 +1,14 @@
+
+ platform :ios, '11.0'
+
+target 'Simpsons Quotes' do
+  
+  use_frameworks!
+
+  pod 'PKHUD'
+  pod 'Alamofire', '4.9'
+  pod 'AlamofireObjectMapper'
+  pod 'ObjectMapper'
+  pod 'Kingfisher'
+  
+end

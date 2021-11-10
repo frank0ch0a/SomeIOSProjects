@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CADF43A91E1FA24A3055E3E /* Pods_Simpsons_Quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C594D85EF630A18C979FEE /* Pods_Simpsons_Quotes.framework */; };
+		A15BAD702714B973001071C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD6F2714B973001071C7 /* AppDelegate.swift */; };
+		A15BAD742714B973001071C7 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD732714B973001071C7 /* QuotesViewController.swift */; };
+		A15BAD792714B975001071C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15BAD782714B975001071C7 /* Assets.xcassets */; };
+		A15BAD7C2714B975001071C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BAD7A2714B975001071C7 /* LaunchScreen.storyboard */; };
+		A15BAD852714D2AC001071C7 /* QuotesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD842714D2AC001071C7 /* QuotesContract.swift */; };
+		A15BAD872714D3D3001071C7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD862714D3D3001071C7 /* Quote.swift */; };
+		A15BAD8A2714D481001071C7 /* QuotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD892714D481001071C7 /* QuotesRouter.swift */; };
+		A15BAD8C2714D556001071C7 /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD8B2714D556001071C7 /* QuotesInteractor.swift */; };
+		A15BAD8E2714D5C2001071C7 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD8D2714D5C2001071C7 /* QuoteService.swift */; };
+		A15BAD912714D609001071C7 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD902714D609001071C7 /* EndPoints.swift */; };
+		A15BAD952714D68F001071C7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD942714D68F001071C7 /* APIManager.swift */; };
+		A15BAD982714D6B5001071C7 /* APICLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD972714D6B5001071C7 /* APICLient.swift */; };
+		A15BAD9A2714D791001071C7 /* QuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD992714D791001071C7 /* QuotesPresenter.swift */; };
+		A15BAD9C2714D83B001071C7 /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD9B2714D83B001071C7 /* ImageDataService.swift */; };
+		A15BAD9E2714D85F001071C7 /* KingfisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD9D2714D85E001071C7 /* KingfisherService.swift */; };
+		A15BADA02714DA28001071C7 /* QuoteDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BAD9F2714DA28001071C7 /* QuoteDetailContract.swift */; };
+		A15BADA32714DA9F001071C7 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADA22714DA9F001071C7 /* QuoteDetailViewController.swift */; };
+		A15BADA62714DB09001071C7 /* QuoteDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADA52714DB09001071C7 /* QuoteDetailPresenter.swift */; };
+		A15BADA82714DB43001071C7 /* QuoteDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADA72714DB43001071C7 /* QuoteDetailRouter.swift */; };
+		A15BADAA2714DB78001071C7 /* QuoteDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADA92714DB77001071C7 /* QuoteDetailInteractor.swift */; };
+		A15BADB42714E2BF001071C7 /* QuotesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADB32714E2BF001071C7 /* QuotesPresenterTests.swift */; };
+		A15BADBB2714ECB3001071C7 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BADBA2714ECB3001071C7 /* TestConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A15BADB52714E2BF001071C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15BAD642714B973001071C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15BAD6B2714B973001071C7;
+			remoteInfo = "Simpsons Quotes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23C594D85EF630A18C979FEE /* Pods_Simpsons_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simpsons_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F433AA703581889AFF8DE48 /* Pods-Simpsons Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simpsons Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Simpsons Quotes/Pods-Simpsons Quotes.debug.xcconfig"; sourceTree = "<group>"; };
+		A15BAD6C2714B973001071C7 /* Simpsons Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simpsons Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15BAD6F2714B973001071C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A15BAD732714B973001071C7 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		A15BAD782714B975001071C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A15BAD7B2714B975001071C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A15BAD7D2714B975001071C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15BAD842714D2AC001071C7 /* QuotesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesContract.swift; sourceTree = "<group>"; };
+		A15BAD862714D3D3001071C7 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		A15BAD892714D481001071C7 /* QuotesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesRouter.swift; sourceTree = "<group>"; };
+		A15BAD8B2714D556001071C7 /* QuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractor.swift; sourceTree = "<group>"; };
+		A15BAD8D2714D5C2001071C7 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		A15BAD902714D609001071C7 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		A15BAD942714D68F001071C7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A15BAD972714D6B5001071C7 /* APICLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICLient.swift; sourceTree = "<group>"; };
+		A15BAD992714D791001071C7 /* QuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPresenter.swift; sourceTree = "<group>"; };
+		A15BAD9B2714D83B001071C7 /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		A15BAD9D2714D85E001071C7 /* KingfisherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherService.swift; sourceTree = "<group>"; };
+		A15BAD9F2714DA28001071C7 /* QuoteDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailContract.swift; sourceTree = "<group>"; };
+		A15BADA22714DA9F001071C7 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
+		A15BADA52714DB09001071C7 /* QuoteDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailPresenter.swift; sourceTree = "<group>"; };
+		A15BADA72714DB43001071C7 /* QuoteDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailRouter.swift; sourceTree = "<group>"; };
+		A15BADA92714DB77001071C7 /* QuoteDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailInteractor.swift; sourceTree = "<group>"; };
+		A15BADB12714E2BF001071C7 /* Simpsons QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simpsons QuotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15BADB32714E2BF001071C7 /* QuotesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPresenterTests.swift; sourceTree = "<group>"; };
+		A15BADBA2714ECB3001071C7 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		FC96AE6A7826A66682DA65F8 /* Pods-Simpsons Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simpsons Quotes.release.xcconfig"; path = "Target Support Files/Pods-Simpsons Quotes/Pods-Simpsons Quotes.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A15BAD692714B973001071C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CADF43A91E1FA24A3055E3E /* Pods_Simpsons_Quotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15BADAE2714E2BF001071C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FE70AC670DD0DF91160F4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F433AA703581889AFF8DE48 /* Pods-Simpsons Quotes.debug.xcconfig */,
+				FC96AE6A7826A66682DA65F8 /* Pods-Simpsons Quotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A6DCE7331737DCC04750CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C594D85EF630A18C979FEE /* Pods_Simpsons_Quotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A15BAD632714B972001071C7 = {
+			isa = PBXGroup;
+			children = (
+				A15BAD6E2714B973001071C7 /* Simpsons Quotes */,
+				A15BADB22714E2BF001071C7 /* Simpsons QuotesTests */,
+				8A6DCE7331737DCC04750CEE /* Frameworks */,
+				71FE70AC670DD0DF91160F4E /* Pods */,
+				A15BAD6D2714B973001071C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A15BAD6D2714B973001071C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD6C2714B973001071C7 /* Simpsons Quotes.app */,
+				A15BADB12714E2BF001071C7 /* Simpsons QuotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A15BAD6E2714B973001071C7 /* Simpsons Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD6F2714B973001071C7 /* AppDelegate.swift */,
+				A15BAD932714D631001071C7 /* Common */,
+				A15BAD7D2714B975001071C7 /* Info.plist */,
+				A15BADAC2714DCC4001071C7 /* Supporting Files */,
+				A15BAD962714D695001071C7 /* Managers */,
+				A15BADA12714DA32001071C7 /* QuoteDetail */,
+				A15BAD832714D280001071C7 /* Quotes */,
+				A15BADAB2714DC89001071C7 /* Resources */,
+				A15BAD8F2714D5D6001071C7 /* Services */,
+			);
+			path = "Simpsons Quotes";
+			sourceTree = "<group>";
+		};
+		A15BAD832714D280001071C7 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD732714B973001071C7 /* QuotesViewController.swift */,
+				A15BAD842714D2AC001071C7 /* QuotesContract.swift */,
+				A15BAD892714D481001071C7 /* QuotesRouter.swift */,
+				A15BAD8B2714D556001071C7 /* QuotesInteractor.swift */,
+				A15BAD992714D791001071C7 /* QuotesPresenter.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		A15BAD882714D3D8001071C7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD862714D3D3001071C7 /* Quote.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A15BAD8F2714D5D6001071C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD8D2714D5C2001071C7 /* QuoteService.swift */,
+				A15BAD9B2714D83B001071C7 /* ImageDataService.swift */,
+				A15BAD9D2714D85E001071C7 /* KingfisherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A15BAD922714D613001071C7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD902714D609001071C7 /* EndPoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A15BAD932714D631001071C7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD922714D613001071C7 /* Endpoints */,
+				A15BAD882714D3D8001071C7 /* Entities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A15BAD962714D695001071C7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD942714D68F001071C7 /* APIManager.swift */,
+				A15BAD972714D6B5001071C7 /* APICLient.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A15BADA12714DA32001071C7 /* QuoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD9F2714DA28001071C7 /* QuoteDetailContract.swift */,
+				A15BADA72714DB43001071C7 /* QuoteDetailRouter.swift */,
+				A15BADA22714DA9F001071C7 /* QuoteDetailViewController.swift */,
+				A15BADA52714DB09001071C7 /* QuoteDetailPresenter.swift */,
+				A15BADA92714DB77001071C7 /* QuoteDetailInteractor.swift */,
+			);
+			path = QuoteDetail;
+			sourceTree = "<group>";
+		};
+		A15BADAB2714DC89001071C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD782714B975001071C7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A15BADAC2714DCC4001071C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A15BAD7A2714B975001071C7 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A15BADB22714E2BF001071C7 /* Simpsons QuotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A15BADB32714E2BF001071C7 /* QuotesPresenterTests.swift */,
+				A15BADBA2714ECB3001071C7 /* TestConstants.swift */,
+			);
+			path = "Simpsons QuotesTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A15BAD6B2714B973001071C7 /* Simpsons Quotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15BAD802714B975001071C7 /* Build configuration list for PBXNativeTarget "Simpsons Quotes" */;
+			buildPhases = (
+				27A5FB225FA97DA88F53ED73 /* [CP] Check Pods Manifest.lock */,
+				A15BAD682714B973001071C7 /* Sources */,
+				A15BAD692714B973001071C7 /* Frameworks */,
+				A15BAD6A2714B973001071C7 /* Resources */,
+				C1C13FEDCC9BC0B957D99E36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simpsons Quotes";
+			productName = "Simpsons Quotes";
+			productReference = A15BAD6C2714B973001071C7 /* Simpsons Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A15BADB02714E2BF001071C7 /* Simpsons QuotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15BADB72714E2BF001071C7 /* Build configuration list for PBXNativeTarget "Simpsons QuotesTests" */;
+			buildPhases = (
+				A15BADAD2714E2BF001071C7 /* Sources */,
+				A15BADAE2714E2BF001071C7 /* Frameworks */,
+				A15BADAF2714E2BF001071C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15BADB62714E2BF001071C7 /* PBXTargetDependency */,
+			);
+			name = "Simpsons QuotesTests";
+			productName = "Simpsons QuotesTests";
+			productReference = A15BADB12714E2BF001071C7 /* Simpsons QuotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A15BAD642714B973001071C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A15BAD6B2714B973001071C7 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A15BADB02714E2BF001071C7 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A15BAD6B2714B973001071C7;
+					};
+				};
+			};
+			buildConfigurationList = A15BAD672714B973001071C7 /* Build configuration list for PBXProject "Simpsons Quotes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A15BAD632714B972001071C7;
+			productRefGroup = A15BAD6D2714B973001071C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A15BAD6B2714B973001071C7 /* Simpsons Quotes */,
+				A15BADB02714E2BF001071C7 /* Simpsons QuotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A15BAD6A2714B973001071C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15BAD7C2714B975001071C7 /* LaunchScreen.storyboard in Resources */,
+				A15BAD792714B975001071C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15BADAF2714E2BF001071C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A5FB225FA97DA88F53ED73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simpsons Quotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C13FEDCC9BC0B957D99E36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simpsons Quotes/Pods-Simpsons Quotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simpsons Quotes/Pods-Simpsons Quotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simpsons Quotes/Pods-Simpsons Quotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A15BAD682714B973001071C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15BAD8E2714D5C2001071C7 /* QuoteService.swift in Sources */,
+				A15BAD872714D3D3001071C7 /* Quote.swift in Sources */,
+				A15BAD8C2714D556001071C7 /* QuotesInteractor.swift in Sources */,
+				A15BADA32714DA9F001071C7 /* QuoteDetailViewController.swift in Sources */,
+				A15BAD9A2714D791001071C7 /* QuotesPresenter.swift in Sources */,
+				A15BAD982714D6B5001071C7 /* APICLient.swift in Sources */,
+				A15BAD952714D68F001071C7 /* APIManager.swift in Sources */,
+				A15BAD742714B973001071C7 /* QuotesViewController.swift in Sources */,
+				A15BAD9C2714D83B001071C7 /* ImageDataService.swift in Sources */,
+				A15BAD852714D2AC001071C7 /* QuotesContract.swift in Sources */,
+				A15BADA02714DA28001071C7 /* QuoteDetailContract.swift in Sources */,
+				A15BAD702714B973001071C7 /* AppDelegate.swift in Sources */,
+				A15BAD912714D609001071C7 /* EndPoints.swift in Sources */,
+				A15BAD8A2714D481001071C7 /* QuotesRouter.swift in Sources */,
+				A15BADA62714DB09001071C7 /* QuoteDetailPresenter.swift in Sources */,
+				A15BADA82714DB43001071C7 /* QuoteDetailRouter.swift in Sources */,
+				A15BADAA2714DB78001071C7 /* QuoteDetailInteractor.swift in Sources */,
+				A15BAD9E2714D85F001071C7 /* KingfisherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15BADAD2714E2BF001071C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15BADB42714E2BF001071C7 /* QuotesPresenterTests.swift in Sources */,
+				A15BADBB2714ECB3001071C7 /* TestConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A15BADB62714E2BF001071C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15BAD6B2714B973001071C7 /* Simpsons Quotes */;
+			targetProxy = A15BADB52714E2BF001071C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A15BAD7A2714B975001071C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A15BAD7B2714B975001071C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A15BAD7E2714B975001071C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A15BAD7F2714B975001071C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A15BAD812714B975001071C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F433AA703581889AFF8DE48 /* Pods-Simpsons Quotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simpsons Quotes/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Simpsons-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A15BAD822714B975001071C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC96AE6A7826A66682DA65F8 /* Pods-Simpsons Quotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simpsons Quotes/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Simpsons-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A15BADB82714E2BF001071C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Simpsons-QuotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simpsons Quotes.app/Simpsons Quotes";
+			};
+			name = Debug;
+		};
+		A15BADB92714E2BF001071C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Simpsons-QuotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simpsons Quotes.app/Simpsons Quotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A15BAD672714B973001071C7 /* Build configuration list for PBXProject "Simpsons Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15BAD7E2714B975001071C7 /* Debug */,
+				A15BAD7F2714B975001071C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15BAD802714B975001071C7 /* Build configuration list for PBXNativeTarget "Simpsons Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15BAD812714B975001071C7 /* Debug */,
+				A15BAD822714B975001071C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15BADB72714E2BF001071C7 /* Build configuration list for PBXNativeTarget "Simpsons QuotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15BADB82714E2BF001071C7 /* Debug */,
+				A15BADB92714E2BF001071C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A15BAD642714B973001071C7 /* Project object */;
+}
